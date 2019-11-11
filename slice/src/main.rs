@@ -32,7 +32,7 @@ fn main()
     }
 }
 
-fn first_word(s: &String) -> &str
+fn first_word(s: &str) -> &str
 {
     let bytes = s.as_bytes(); // convert string into an array of bytes
     let mut index: usize = s.len()-2;
@@ -51,7 +51,7 @@ fn first_word(s: &String) -> &str
 
 // Accepts a string and splits it by the provided delimiter
 // The default delimiter is a space
-fn slice(s: &String)-> Vec<&str>
+fn slice(s: &str)-> Vec<&str>
 {
     let bytes = s.as_bytes(); // convert the string into an array of bytes
     let mut words = Vec::new(); // The list of delimited words
